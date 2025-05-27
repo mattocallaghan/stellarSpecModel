@@ -3,7 +3,7 @@ import time
 from hashlib import md5
 
 
-home_dir = os.path.expanduser('~')
+home_dir = os.get_cwd()
 grid_data_dir = os.getenv('stellarSpecModel_grid_PATH', f'{home_dir}/.stellarSpecModel/grid_data/')
 
 grid_names = {
